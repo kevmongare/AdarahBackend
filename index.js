@@ -25,6 +25,13 @@ const client = new OpenAI({
     baseURL: "https://router.huggingface.co/v1"
 });
 
+app.get("/api/keepalive", (req, res) => {
+    res.json({
+        status: "awake",
+        timestamp: new Date()
+    });
+});
+
 // === CHAT ENDPOINT ===
 app.post("/api/chat", async (req, res) => {
     const { message } = req.body || {};
