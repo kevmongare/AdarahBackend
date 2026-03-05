@@ -80,7 +80,7 @@ User: ${message}
                 }
             ],
             temperature: 0.7,
-            max_tokens: 2000
+            max_tokens: 500
         });
 
         // 3️⃣ Extract AI response safely
