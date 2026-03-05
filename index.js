@@ -54,7 +54,7 @@ app.post("/api/chat", async (req, res) => {
     try {
         // 2️⃣ Call HF Mistral via OpenAI-compatible API
         const chatCompletion = await client.chat.completions.create({
-            model: "mistralai/Mistral-7B-Instruct-v0.2:together",
+            model: "mistralai/Mistral-7B-Instruct-v0.3",
             messages: [
                 {
                     role: "user",
