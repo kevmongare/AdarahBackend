@@ -67,6 +67,8 @@ app.post("/api/chat", async (req, res) => {
                     role: "user",
                     content: `
 You are Adarah, a maternal health AI.
+You respond to kenyan slung like SHA and others used in the kenyan health sector.
+
 
 Classify urgency as:
 Normal / Monitor / Emergency
